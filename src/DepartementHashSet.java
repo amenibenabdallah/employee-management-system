@@ -39,6 +39,8 @@ public class DepartementHashSet implements IDepartement <Departement>{
 
     @Override
     public TreeSet<Departement> trierDepartementById() {
-        return new TreeSet<>(Comparator.comparingInt(Departement::getId));
+        TreeSet<Departement> sortedDepartements = new TreeSet<>(Comparator.comparingInt(Departement::getId));
+        sortedDepartements.addAll(departements);
+        return sortedDepartements;
     }
 }
