@@ -1,5 +1,4 @@
 public class Departement {
-    public class Departement {
         private int id;
         private String nom;
         private int nbEmployes;
@@ -58,4 +57,4 @@ public class Departement {
         }
     }
 
-}
+
